@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfolio con categorías: Minecraft, JavaScript y Web" />
+  <title>diamondclass | Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 10px;
+    }
+    nav {
+      background-color: #222;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #ffbd59;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .box {
+      background-color: #333;
+      border-radius: 5px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+    .box:hover {
+      transform: scale(1.05);
+    }
+    .box img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .box p {
+      padding: 15px;
+    }
+    footer {
+      background-color: #222;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfolio</h1>
+    <p>Mis anteriores experiencias que realmente marcaron diferencia</p>
+  </header>
+  
+  <nav>
+    <a href="#minecraft">Minecraft</a>
+    <a href="#javascript">JavaScript</a>
+  </nav>
+
+  <section id="minecraft">
+    <h2>Minecraft</h2>
+    <div class="container">
+      <div class="box">
+        <img src="data:image/jpeg;base64,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" alt="Tacoland Network">
+        <p>Helper | Demoted for spectate users</p>
+      </div>
+      <div class="box">
+        <img src="https://pbs.twimg.com/profile_images/1839489146701873152/GV_VWU2Z_400x400.jpg" alt="VaeyPvP Network">
+        <p>Platform-Admin | Server closed</p>
+      </div>
+      <div class="box">
+        <img src="https://pbs.twimg.com/profile_images/1687227864565923845/i9Iox2WG_400x400.jpg" alt="DynamicPvP Network">
+        <p>T-Mod | (SS Team) 2 times, resign and demoted</p>
+      </div>
+      <div class="box">
+        <img src="https://pbs.twimg.com/profile_images/1403724454551818256/KWIt46kH_400x400.jpg" alt="Battle Network">
+        <p>Mod | Resign due the high school</p>
+      </div>
+      <div class="box">
+        <img src="https://pbs.twimg.com/profile_images/1811622488490516480/2KwUCdTH_400x400.png" alt="WaterMC Network">
+        <p>Mod | Server closed</p>
+    </div>
+      <div class="box">
+        <img src="https://images-ext-1.discordapp.net/external/HbxWkcOYLDaakgMjzQVWMWak1oFGa4HYHocdgh-UvKk/%3Fsize%3D1024/https/cdn.discordapp.com/icons/1330513602938933299/b0fd1250504a90be069230ca278c07b4.png?format=webp&quality=lossless" alt="HCLeagues Network">
+        <p>Mod | (SS Mentor) Active</p>
+      </div>
+      <div class="box">
+        <img src="https://raw.githubusercontent.com/LunarClient/ServerMappings/refs/heads/master/servers/vexpvp/logo.png" alt="VexPvP Network">
+        <p>Coordinator | (SS Trainer) Demoted</p>
+      </div>
+      <div class="box">
+        <img src="/assets/images/legendsmc-grande.png" alt="LegendsMC Network">
+        <p>Owner | Closed for money and invoices</p>
+      </div>
+      <div class="box">
+        <img src="https://raw.githubusercontent.com/LunarClient/ServerMappings/refs/heads/master/servers/purgepvp/logo.png" alt="PurgePvP Network">
+        <p>Owner | Server griefed</p>
+      </div>
+      <div class="box">
+        <img src="https://raw.githubusercontent.com/LunarClient/ServerMappings/refs/heads/master/servers/firemc/logo.png" alt="FireMC Network">
+        <p>Manager | Server closed</p>
+      </div>
+      <div class="box">
+        <img src="https://raw.githubusercontent.com/LunarClient/ServerMappings/refs/heads/master/servers/healed/logo.png" alt="Healed Network">
+        <p>Owner | Server selled</p>
+      </div>
+      <div class="box">
+        <img src="https://consumersiteimages.trustpilot.net/business-units/5f9478fe3647b70001b611c6-198x149-1x.avif" alt="WHost">
+        <p>Developer | Bad service, resign</p>
+      </div>
+      <div class="box">
+        <img src="https://raw.githubusercontent.com/LunarClient/ServerMappings/refs/heads/master/servers/verux/logo.png" alt="Verux Network">
+        <p>Anticheat Config & Owner | VPS RIP.</p>
+      </div>
+  </section>
+
+  <section id="javascript">
+    <h2>JavaScript</h2>
+    <div class="container">
+      <div class="box">
+        <img src="/assets/images/Rymbo.png" alt="Rymbo">
+        <p>Rymbo | An Antiraid discord bot.</p>
+      </div>
+      <div class="box">
+        <img src="/assets/images/nearsecurity.jpg" alt="nearsecurity">
+        <p>NearSecurity | The father of Rymbo</p>
+      </div>
+      <div class="box">
+        <img src="data:image/jpeg;base64,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" alt="HellSquad">
+        <p>HellSquad | (Comm. Admin.) Doxing, defacing, raiding squad (Banned) </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; diamondclass | Portfolio</p>
+  </footer>
+</body>
+</html>

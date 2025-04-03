@@ -1,26 +1,69 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="diamondclass portafolio">
-    <meta name="keywords" content="diamondclass, seapvp, cyruspvp, diamondclass portafolio, discord diamondclass, seapvp discord">
-    <link rel="stylesheet" href="style.css"> 
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="diamondclass portfolio" />
+  <meta name="keywords" content="diamondclass, seapvp, cyruspvp, diamondclass portafolio, discord diamondclass, seapvp discord" />
+  <title>diamondclass | Home</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 </head>
-<body>
-    <div class="bg"></div>
-    <div class="animation-wrapper"> <div class="particle particle-1"></div> <div class="particle particle-2"></div> <div class="particle particle-3"></div> <div class="particle particle-4"></div> </div>
-    <div class="center">
-        <div class="animate__animated animate__jackInTheBox">
-                <img src="/assets/images/profile.png"class="Header-image"/>
-            <h1>diamondclass</h1>
-            <h2>Hello everyone, welcome to my portafolio.</h2> 
-        </div>
-        <div class="skills">
-            <h3>My Skills</h3>
-            
-        </div>
-    </div>
 
+<body>
+  <div class="wrapper">
+    <header class="site-header">
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="/experience">Experiences</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="site-content">
+      <div class="bg"></div>
+      <div class="animation-wrapper">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+      </div>
+
+      <section id="home" class="center">
+        <div class="animate__animated animate__jackInTheBox content-box">
+            <img src="/assets/images/profile.png" width="200px" class="rounded-circle img-fluid img-thumbnail">
+          <h1>diamondclass</h1>
+          <h2>Hello everyone, welcome to my portfolio.</h2>
+        </div>
+      </section>
+
+      <section id="skills" class="skills content-box">
+        <h3>My Skills</h3>
+        <div class="slider-container">
+            <img class="slider-item" src="https://camo.githubusercontent.com/213b06289d24ec6f3aa8edd5d990c51d3c99d8eedf92146d3c59ef8e17ca2048/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4d6f6e676f44422d3333333333333f7374796c653d666f722d7468652d6261646765266c6f676f3d6d6f6e676f6462" alt="Mongo" />
+            <img class="slider-item" src="https://camo.githubusercontent.com/10c7a8fa2cf317cc7c4af6f13efac086a9f0ea010f0dfc746c94e5cde310b339/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f48544d4c352d4533344632363f7374796c653d666f722d7468652d6261646765266c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465" alt="HTML" />
+            <img class="slider-item" src="https://camo.githubusercontent.com/b50d4b5449ac9bed0fc02238425fd56db93011d5019563595023ff0bb1a02162/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6176615363726970742d4637444631453f7374796c653d666f722d7468652d6261646765266c6f676f3d6a617661736372697074266c6f676f436f6c6f723d626c61636b" alt="JavaScript" />
+            <img class="slider-item" src="https://camo.githubusercontent.com/b25071e49fa02542719711950e0deefcdbf9b37bf289cd3a402902de33e2d4d0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a534f4e2d3332333333303f7374796c653d666f722d7468652d6261646765266c6f676f3d6a736f6e266c6f676f436f6c6f723d423142314231" alt="JSON" />
+            <img class="slider-item" src="https://camo.githubusercontent.com/ad3e2400ffcfbe4b76ccaba48abea15b465369c875bf21d4e1ddf4264e193c20/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4769744875622d3333333333333f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562" alt="GH" />
+            <img class="slider-item" src="https://camo.githubusercontent.com/97e77bb8ef2cb06bce18bd7d7979c4f9a1578e16c68c029908d6e04d14d6086e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f56697375616c5f53747564696f5f436f64652d3030373844343f7374796c653d666f722d7468652d6261646765266c6f676f3d76697375616c25323073747564696f253230636f6465266c6f676f436f6c6f723d7768697465" alt="VSC" />
+            <img class="slider-item" src="https://camo.githubusercontent.com/6512ebd35b13511a9d249cab620e675fa8472b10471fc4e8641de057ffa53c0f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f496e74656c6c694a5f494445412d3030303030302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d696e74656c6c696a2d69646561266c6f676f436f6c6f723d7768697465" alt="IJ" />
+          </div>
+      </section>
+    </main>
+
+    <footer>
+        <p>&copy; diamondclass | Home</p>
+      </footer>
+  </div>
 </body>
 </html>
