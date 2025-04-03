@@ -74,7 +74,7 @@ html, body {
   overflow: hidden;
   z-index: -2;
 }
-
+/* Ignoren, es pa ver si reacciona el style y se pone bn la chota del css */	
 .center {
   width: 100%;
   display: flex;
