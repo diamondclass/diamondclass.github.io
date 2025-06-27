@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="diamondclass Official Portfolio" />
+  <meta name="keywords" content="diamondclass, seapvp, cyruspvp, diamondclass portfolio, discord diamondclass, seapvp discord" />
+  <title>diamondclass | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #121212;
+      --accent: #ffbd59;
+      --white: #ffffff;
+      --text-light: #bbb;
+      --card-bg: rgba(255,255,255,0.05);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
+    body { background: var(--bg); color: var(--white); font-family: 'Poppins', sans-serif; display:flex; flex-direction:column; min-height:100vh; }
+    .wrapper { flex:1; display:flex; flex-direction:column; }
+    nav { position:sticky; top:0; background: var(--bg); padding:1rem 0; box-shadow:0 2px 4px rgba(0,0,0,0.7); z-index:100; }
+    .nav ul { list-style:none; display:flex; justify-content:center; gap:2rem; }
+    .nav a { color: var(--white); font-weight:600; text-transform:uppercase; font-size:0.9rem; text-decoration:none; transition:color .3s; }
+    .nav a:hover { color: var(--accent); }
+    .site-content { position:relative; flex:1; }
+    .bg { position:absolute; top:0; left:0; width:100%; height:100%; background:linear-gradient(180deg, #000, #111); z-index:-2; }
+    header.site-header { text-align:center; padding:3rem 1rem; background:linear-gradient(135deg, #1f1f1f, #070707); }
+    header.site-header h1 { font-size:3rem; font-weight:800; margin-bottom:0.5rem; }
+    header.site-header h2 { font-size:1.25rem; color: var(--text-light); margin-top:0; }
+    section { padding:4rem 1rem; max-width:1200px; margin:0 auto; }
+    section h2, section h3 { text-align:center; font-size:2rem; margin-bottom:2rem; letter-spacing:1px; }
+    .grid { display:grid; gap:1.5rem; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); }
+    .card { background:var(--card-bg); padding:2rem; border-radius:1rem; text-align:center; backdrop-filter:blur(10px); transition:transform .3s; display:flex; flex-direction:column; justify-content:center; }
+    .card:hover { transform:translateY(-5px); }
+    .card p { color:#ddd; line-height:1.4; margin:0.5rem 0; }
+    .skills .slider-container { display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; }
+    .skills .slider-item { width:80px; height:80px; object-fit:contain; filter: brightness(1.2); }
+    .card a { display:block; color: var(--accent); text-decoration:none; margin:0.5rem 0 0; word-break: break-all; }
+    footer { text-align:center; padding:2rem 1rem; background:#090909; font-size:0.9rem; color:#777; }
+    @media(max-width:600px) { header.site-header h1 { font-size:2.5rem; } section h2, section h3 { font-size:1.75rem; } }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/experience">Experiences</a></li>
+      </ul>
+    </nav>
+
+    <main class="site-content">
+      <div class="bg"></div>
+      <header id="home" class="site-header">
+        <h1>diamondclass</h1>
+        <h2>Hello everyone, welcome to my portfolio.</h2>
+      </header>
+
+      <section id="skills">
+        <h2>My Skills</h2>
+        <div class="slider-container skills">
+          <img class="slider-item" src="https://img.shields.io/badge/-MongoDB-333333?style=for-the-badge&logo=mongodb" alt="MongoDB">
+          <img class="slider-item" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+          <img class="slider-item" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+          <img class="slider-item" src="https://img.shields.io/badge/JSON-323330?style=for-the-badge&logo=json&logoColor=white" alt="JSON">
+          <img class="slider-item" src="https://img.shields.io/badge/-GitHub-333333?style=for-the-badge&logo=github" alt="GitHub">
+          <img class="slider-item" src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VSCode">
+          <img class="slider-item" src="https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white" alt="IntelliJ IDEA">
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="grid">
+          <div class="card">
+            <p><strong>GitHub</strong></p>
+            <a href="https://github.com/diamondclass" target="_blank">github.com/diamondclass</a>
+          </div>
+          <div class="card">
+            <p><strong>Discord</strong></p>
+            <a href="https://discord.gg/a7FqNnHk2m" target="_blank">discord.gg/a7FqNnHk2m</a>
+          </div>
+          <div class="card">
+            <p><strong>Email</strong></p>
+            <a href="mailto:contact@diamondclass.es">contact@diamondclass.es</a>
+          </div>
+          <div class="card">
+            <p><strong>X</strong></p>
+            <a href="https://x.com/diamondclass" target="_blank">x.com/diamondclass</a>
+          </div>
+          <div class="card">
+            <p><strong>Instagram</strong></p>
+            <a href="https://instagram.com/diamondclass.dev" target="_blank">instagram.com/diamondclass.dev</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      &copy; diamondclass | Home
+    </footer>
+  </div>
+</body>
+</html>
